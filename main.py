@@ -22,8 +22,10 @@ w3 = Enterprice_employee("Hasanov","fronted",2300,60)
 w4 = Enterprice_employee("Hamidullayev","junior",2300,80)
 w5 = Enterprice_employee("Yusupov","middle",2500,86)
 
+# obyektlaer hammasi bitta listga kiritilyapti
 workers = [w1,w2,w3,w4,w5]
 
+# ularni daerajasiga qraab oyliklar ozgaryapti
 for worker in workers:
     if 60 <= worker.rating < 75:
         worker.salary *= 1.2
@@ -31,7 +33,7 @@ for worker in workers:
         worker.salary *= 1.4
     elif 90 <= worker.rating <= 100:
         worker.salary *= 1.6
-
+# worker print qilib chiqarilyapti oyliklari ozgratirilgandan song
 for worker in workers:
     print(worker)
 
